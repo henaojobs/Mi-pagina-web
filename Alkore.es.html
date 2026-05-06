@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alkore — Marketing Digital para Entrenadores Personales</title>
+  <title>Alkore — Captación de Clientes para Entrenadores Personales en España</title>
   <meta name="description" content="Alkore ayuda a entrenadores personales a conseguir más clientes con estrategias de captación probadas. Rellena tu agenda sin perder tiempo en redes sociales." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Alkore" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://alkore.co/" />
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:locale"      content="es_ES" />
   <meta property="og:site_name"   content="Alkore" />
-  <meta property="og:title"       content="Alkore — Marketing Digital para Entrenadores Personales" />
+  <meta property="og:title"       content="Alkore — Captación de Clientes para Entrenadores Personales" />
   <meta property="og:description" content="Implementamos el sistema de captación que ya ha sacado a decenas de entrenadores del estancamiento, en menos de 3 meses y con garantía de resultados." />
   <meta property="og:url"         content="https://alkore.co" />
   <meta property="og:image"       content="https://alkore.co/images/og-preview.jpg" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Alkore — Marketing Digital para Entrenadores Personales" />
-  <meta name="twitter:description" content="Presencia digital, captación y automatización para entrenadores personales. Auditoría gratuita incluida." />
+  <meta name="twitter:title"       content="Alkore — Captación de Clientes para Entrenadores" />
+  <meta name="twitter:description" content="Sistema de captación que llena tu agenda en menos de 3 meses, con garantía de resultados." />
   <meta name="twitter:image"       content="https://alkore.co/images/og-preview.jpg" />
 
   <!-- Schema markup -->
@@ -52,6 +51,29 @@
     },
     "sameAs": [
       "https://www.instagram.com/alkore.co/"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "297",
+        "priceCurrency": "EUR",
+        "description": "Contenido y estrategia base para entrenadores que quieren empezar a generar leads."
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro",
+        "price": "597",
+        "priceCurrency": "EUR",
+        "description": "Sistema completo de captación: contenido, anuncios, landing page y automatización."
+      },
+      {
+        "@type": "Offer",
+        "name": "Elite",
+        "price": "997",
+        "priceCurrency": "EUR",
+        "description": "Para entrenadores que quieren escalar a alto volumen o modalidad online."
+      }
     ]
   }
   </script>
@@ -145,7 +167,7 @@
     img { max-width: 100%; display: block; }
 
     /* ─── Utility ────────────────────────────────────────────────── */
-    .container { max-width: 1400px; margin: 0 auto; padding: 0 4px; }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
@@ -181,12 +203,12 @@
       margin-bottom: 16px;
     }
     .section-title {
-      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 800; line-height: 1.15;
       color: var(--text);
     }
     .section-sub {
-      font-size: 1.2rem; color: var(--text-mid);
+      font-size: 1.1rem; color: var(--text-mid);
       max-width: 560px; margin-top: 12px;
     }
 
@@ -288,20 +310,10 @@
        HERO
     ══════════════════════════════════════════════════════════════ */
     .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
+      padding: 140px 0 100px;
       background: var(--hero-bg);
       position: relative; overflow: hidden;
-      padding: 120px 0 80px;
     }
-    #aurora-canvas {
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .hero .container { position: relative; z-index: 1; width: 100%; }
     .hero::before {
       content: '';
       position: absolute; top: -200px; right: -200px;
@@ -316,17 +328,17 @@
       margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
     }
     .hero-title {
-      font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
       font-weight: 900; line-height: 1.1;
       letter-spacing: -0.03em; color: var(--text);
       margin-bottom: 24px;
     }
-    .hero-title .highlight { color: var(--green-1); position: relative; }
+    .hero-title .highlight { color: var(--green-1); position: relative; white-space: nowrap; }
     .hero-title .highlight::after {
       content: ''; position: absolute; bottom: 2px; left: 0; right: 0;
       height: 4px; background: rgba(20,217,33,0.3); border-radius: 2px;
     }
-    .hero-desc { font-size: 1.25rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 36px; max-width: 520px; }
+    .hero-desc { font-size: 1.15rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 36px; max-width: 500px; }
     .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
     .hero-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 16px; display: flex; align-items: center; gap: 6px; }
     .hero-note::before { content: '✓'; color: var(--green-2); font-weight: 700; }
@@ -370,8 +382,7 @@
     /* ══════════════════════════════════════════════════════════════
        PAIN POINTS  (always dark background, stays the same)
     ══════════════════════════════════════════════════════════════ */
-    .pain { min-height: 100vh; display: flex; align-items: center; padding: 80px 0; background: var(--green-4); color: #F2F2F2; }
-    .pain .container { width: 100%; }
+    .pain { padding: 100px 0; background: var(--green-4); color: #F2F2F2; }
     [data-theme="dark"] .pain { background: #050f05; }
     .pain-header { text-align: center; margin-bottom: 64px; }
     .pain-header .tag { background: rgba(20,217,33,0.15); color: var(--green-1); }
@@ -390,8 +401,7 @@
     /* ══════════════════════════════════════════════════════════════
        METHODOLOGY
     ══════════════════════════════════════════════════════════════ */
-    .method { min-height: 100vh; display: flex; align-items: center; padding: 80px 0; background: var(--bg-alt); transition: background 0.35s ease; }
-    .method .container { width: 100%; }
+    .method { padding: 100px 0; background: var(--bg-alt); transition: background 0.35s ease; }
     .method-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
     .method-text .section-sub { max-width: none; }
     .method-visual {
@@ -410,8 +420,7 @@
     /* ══════════════════════════════════════════════════════════════
        BEFORE / AFTER
     ══════════════════════════════════════════════════════════════ */
-    .transform { min-height: 100vh; display: flex; align-items: center; padding: 80px 0; background: var(--bg); transition: background 0.35s ease; }
-    .transform .container { width: 100%; }
+    .transform { padding: 100px 0; background: var(--bg); transition: background 0.35s ease; }
     .transform-header { text-align: center; margin-bottom: 64px; }
     .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
     .compare-card { border-radius: 20px; padding: 36px 32px; border: 2px solid; }
@@ -453,8 +462,7 @@
     /* ══════════════════════════════════════════════════════════════
        SERVICES
     ══════════════════════════════════════════════════════════════ */
-    .services { min-height: 100vh; display: flex; align-items: center; padding: 80px 0; background: var(--bg-alt); transition: background 0.35s ease; }
-    .services .container { width: 100%; }
+    .services { padding: 100px 0; background: var(--bg-alt); transition: background 0.35s ease; }
     .services-header { text-align: center; margin-bottom: 64px; }
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .service-card {
@@ -527,18 +535,16 @@
        CTA FINAL  (always dark, no change needed)
     ══════════════════════════════════════════════════════════════ */
     .cta-final {
-      min-height: 100vh; display: flex; align-items: center;
-      padding: 80px 0;
+      padding: 100px 0;
       background: linear-gradient(135deg, var(--green-4) 0%, #031a02 100%);
       text-align: center; position: relative; overflow: hidden;
     }
-    .cta-final .container { width: 100%; }
     [data-theme="dark"] .cta-final { background: linear-gradient(135deg, #050f05 0%, #020802 100%); }
     .cta-final::before { content: ''; position: absolute; top: -300px; left: 50%; transform: translateX(-50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(20,217,33,0.12) 0%, transparent 70%); }
     .cta-final .section-title { color: #F2F2F2; max-width: 680px; margin: 0 auto 16px; }
     .cta-final .section-sub { color: rgba(242,242,242,0.6); margin: 0 auto 40px; text-align: center; }
     .cta-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
-    .cta-note { font-size: 0.82rem; color: rgba(242,242,242,0.4); margin-top: 36px; }
+    .cta-note { font-size: 0.82rem; color: rgba(242,242,242,0.4); margin-top: 16px; }
 
     /* ══════════════════════════════════════════════════════════════
        FOOTER  (always dark)
@@ -559,29 +565,6 @@
     .social-link { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: rgba(242,242,242,0.5); transition: all var(--transition); }
     .social-link:hover { background: var(--green-1); color: var(--green-4); }
 
-    /* Floating social bar */
-    .social-float {
-      position: fixed; left: 20px; top: 50%; transform: translateY(-50%);
-      display: flex; flex-direction: column; gap: 12px;
-      z-index: 900;
-    }
-    .social-float a {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-mid);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--text-mid);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      transition: all var(--transition);
-    }
-    .social-float a:hover {
-      background: var(--green-1); color: var(--green-4);
-      border-color: var(--green-1);
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(20,217,33,0.3);
-    }
-    @media (max-width: 600px) { .social-float { display: none; } }
-
     /* ══════════════════════════════════════════════════════════════
        RESPONSIVE
     ══════════════════════════════════════════════════════════════ */
@@ -595,7 +578,6 @@
       .hamburger { display: flex; }
     }
     @media (max-width: 600px) {
-      .container { padding: 0 20px; }
       .pain-grid, .services-grid, .pricing-grid { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr 1fr; }
       .compare-grid { grid-template-columns: 1fr; }
@@ -604,16 +586,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Floating social bar -->
-  <div class="social-float">
-    <a href="https://www.instagram.com/alkore.co/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
-    <a href="https://wa.me/34666810722" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-    </a>
-  </div>
 
   <!-- ══════════════════════════════════════════════════════════════
        NAVIGATION
@@ -637,11 +609,9 @@
         </a>
 
         <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#metodologia">Método</a></li>
-          <li><a href="#transformacion">Resultados</a></li>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#transformacion">Resultados</a></li>
+          <li><a href="#precios">Precios</a></li>
         </ul>
 
         <div class="nav-right">
@@ -659,11 +629,9 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#inicio">Inicio</a>
-    <a href="#metodologia">Método</a>
-    <a href="#transformacion">Resultados</a>
     <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#transformacion">Resultados</a>
+    <a href="#precios">Precios</a>
     <a href="#contacto" class="btn-primary" style="text-align:center;justify-content:center;">Empezar ahora &rarr;</a>
   </div>
 
@@ -671,22 +639,23 @@
        HERO
   ══════════════════════════════════════════════════════════════ -->
   <section class="hero" id="inicio">
-    <canvas id="aurora-canvas" aria-hidden="true"></canvas>
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <p class="hero-eyebrow">Marketing digital para entrenadores personales</p>
+          <p class="hero-eyebrow">Captación de clientes para entrenadores</p>
           <h1 class="hero-title">
-            Eres buen entrenador.<br>
-            <span class="highlight">El problema es que nadie lo sabe.</span>
+            Si sigues esperando a que te recomienden, seguirás facturando lo mismo
+            <span class="highlight">dentro de un año.</span>
           </h1>
           <p class="hero-desc">
-            Presencia digital, captación y automatización. Todo lo que necesitas para llenar tu agenda.
+            Implementamos el sistema de captación que ya ha sacado a decenas de entrenadores
+            del estancamiento, en menos de 3 meses y con garantía de resultados.
           </p>
           <div class="hero-actions">
             <a href="#contacto" class="btn-primary">Quiero más clientes &rarr;</a>
+            <a href="#transformacion" class="btn-outline">Ver resultados</a>
           </div>
-          <p class="hero-note">Sin permanencia · Auditoría gratuita incluida</p>
+          <p class="hero-note">Sin permanencia. Resultados desde el primer mes.</p>
         </div>
 
         <div class="hero-visual">
@@ -775,7 +744,7 @@
       <div class="method-inner">
         <div class="method-text reveal">
           <span class="tag">Nuestro método</span>
-          <h2 class="section-title">Tu sistema de clientes,<br>ya construido</h2>
+          <h2 class="section-title">Captación inteligente,<br>construida sobre datos</h2>
           <p class="section-sub">No inventamos. Analizamos lo que ya funciona en tu nicho y lo escalamos con las herramientas adecuadas.</p>
         </div>
         <div class="method-visual reveal">
@@ -981,24 +950,94 @@
   </section>
   -->
 
+  <!-- ══════════════════════════════════════════════════════════════
+       PRICING
+  ══════════════════════════════════════════════════════════════ -->
+  <section class="pricing" id="precios">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <span class="tag">Precios</span>
+        <h2 class="section-title">Inversión clara,<br>resultados medibles</h2>
+        <p class="section-sub" style="margin:12px auto 0;text-align:center;">Sin permanencia obligatoria. Sin letra pequeña. Si no ves resultados, hablamos.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-name">Starter</div>
+          <div class="price-amount">
+            <span class="currency">€</span>
+            <span class="amount">297</span>
+            <span class="period">/mes</span>
+          </div>
+          <p class="price-desc">Para entrenadores que quieren empezar a generar leads de forma consistente.</p>
+          <ul class="price-features">
+            <li>8 posts mensuales para redes</li>
+            <li>Estrategia de contenido</li>
+            <li>Optimización de perfil de Instagram</li>
+            <li>Informe mensual de métricas</li>
+            <li>Soporte por email</li>
+          </ul>
+          <button class="btn-pricing btn-pricing-outline">Empezar con Starter</button>
+        </div>
+        <div class="price-card popular reveal">
+          <div class="popular-badge">Más popular</div>
+          <div class="price-name">Pro</div>
+          <div class="price-amount">
+            <span class="currency">€</span>
+            <span class="amount">597</span>
+            <span class="period">/mes</span>
+          </div>
+          <p class="price-desc">El sistema completo para entrenadores que quieren la agenda llena sin perder tiempo.</p>
+          <ul class="price-features">
+            <li>12 posts + 4 reels al mes</li>
+            <li>Gestión de anuncios (Meta/IG)</li>
+            <li>Landing page de captación</li>
+            <li>Secuencia de email automatizada</li>
+            <li>CRM y gestión de leads</li>
+            <li>Llamada de estrategia mensual</li>
+            <li>Soporte prioritario WhatsApp</li>
+          </ul>
+          <button class="btn-pricing btn-pricing-primary">Empezar con Pro</button>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-name">Elite</div>
+          <div class="price-amount">
+            <span class="currency">€</span>
+            <span class="amount">997</span>
+            <span class="period">/mes</span>
+          </div>
+          <p class="price-desc">Para entrenadores que quieren escalar a un negocio de alto volumen o modalidad online.</p>
+          <ul class="price-features">
+            <li>Todo lo del plan Pro</li>
+            <li>Embudo de ventas avanzado</li>
+            <li>Webinar o clase magistral mensual</li>
+            <li>Estrategia de lanzamiento</li>
+            <li>Account manager dedicado</li>
+            <li>Sesiones de estrategia quincenales</li>
+          </ul>
+          <button class="btn-pricing btn-pricing-outline">Empezar con Elite</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ══════════════════════════════════════════════════════════════
        CTA FINAL
   ══════════════════════════════════════════════════════════════ -->
   <section class="cta-final" id="contacto">
     <div class="container">
-      <span class="tag" style="background:rgba(20,217,33,0.15);color:var(--green-1);">Auditoría gratuita</span>
-      <h2 class="section-title reveal">Descubre qué te está<br>frenando y cómo arreglarlo</h2>
+      <span class="tag" style="background:rgba(20,217,33,0.15);color:var(--green-1);">¿Listo para crecer?</span>
+      <h2 class="section-title reveal">Tu próximo cliente te está<br>buscando ahora mismo</h2>
       <p class="section-sub reveal">
-        Analizamos tu situación actual sin coste y te damos un diagnóstico honesto
-        con una propuesta adaptada a lo que necesitas.
+        Reserva una llamada gratuita de 30 minutos y te mostramos exactamente
+        cómo podemos llenar tu agenda en los próximos 60 días.
       </p>
       <div class="cta-actions reveal">
         <a href="mailto:henao.jobs@gmail.com" class="btn-primary" style="font-size:1.05rem;padding:16px 36px;">
-          Pedir mi auditoría gratis &rarr;
+          Reservar llamada gratuita &rarr;
         </a>
+        <a href="#servicios" class="btn-outline" style="color:#F2F2F2;border-color:rgba(242,242,242,0.25);">Ver servicios</a>
       </div>
-      <p class="cta-note reveal">Sin compromiso · Diagnóstico real · Propuesta personalizada</p>
+      <p class="cta-note reveal">Sin compromiso · 30 minutos · 100% gratuito</p>
     </div>
   </section>
 
@@ -1028,25 +1067,27 @@
         <div class="footer-col">
           <h4>Servicios</h4>
           <ul>
-            <li><span>Presencia Digital</span></li>
-            <li><span>Captación de Clientes</span></li>
-            <li><span>Gestión y Automatización</span></li>
+            <li><span>Generación de Leads</span></li>
+            <li><span>Contenido para Redes</span></li>
+            <li><span>Landing Pages</span></li>
+            <li><span>Consultoría</span></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Empresa</h4>
           <ul>
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#transformacion">Resultados</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#precios">Precios</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
           <ul>
-            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="#">Política de privacidad</a></li>
             <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="#">Aviso legal</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
@@ -1057,7 +1098,7 @@
           <a href="https://www.instagram.com/alkore.co/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="https://wa.me/34666810722" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/TUNUMERO" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
           </a>
         </div>
@@ -1136,57 +1177,6 @@
       }
     }, { threshold: 0.5 }).observe(document.querySelector('.hero'));
 
-    // ─── Aurora background ────────────────────────────────────────
-    (function() {
-      const canvas = document.getElementById('aurora-canvas');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-      const colorStops = ["#14D921", "#0A7311", "#14D921"];
-      const blend = 0.55;
-      const amplitude = 1.0;
-      const speed = 0.9;
-      let t = 0;
-
-      function resize() {
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-      }
-
-      function draw() {
-        const w = canvas.width, h = canvas.height;
-        ctx.clearRect(0, 0, w, h);
-        for (let i = 0; i < 4; i++) {
-          const phase = (i / 4) * Math.PI * 2;
-          const yBase = h * (0.15 + i * 0.2);
-          const amp = h * 0.13 * amplitude;
-          const freq = 0.0018 + i * 0.0007;
-          ctx.beginPath();
-          ctx.moveTo(-10, h + 10);
-          for (let x = -10; x <= w + 10; x += 3) {
-            const y = yBase
-              + Math.sin(x * freq + t * 0.8 + phase) * amp
-              + Math.sin(x * freq * 1.8 + t * 0.45 + phase * 1.3) * amp * 0.45
-              + Math.sin(x * freq * 0.45 + t * 1.3 + phase * 0.6) * amp * 0.3;
-            ctx.lineTo(x, y);
-          }
-          ctx.lineTo(w + 10, h + 10);
-          ctx.closePath();
-          const grad = ctx.createLinearGradient(0, 0, w, 0);
-          colorStops.forEach((c, j) => grad.addColorStop(j / (colorStops.length - 1), c));
-          ctx.fillStyle = grad;
-          ctx.globalAlpha = (0.3 - i * 0.05) * blend;
-          ctx.fill();
-        }
-        ctx.globalAlpha = 1;
-        t += 0.007 * speed;
-        requestAnimationFrame(draw);
-      }
-
-      resize();
-      window.addEventListener('resize', resize);
-      draw();
-    })();
-
     // ─── Bar fill animation ───────────────────────────────────────
     window.addEventListener('load', () => {
       setTimeout(() => {
@@ -1197,7 +1187,6 @@
         });
       }, 400);
     });
-
   </script>
 </body>
 </html>
