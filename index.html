@@ -55,6 +55,7 @@
     ]
   }
   </script>
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -145,7 +146,7 @@
     img { max-width: 100%; display: block; }
 
     /* ─── Utility ────────────────────────────────────────────────── */
-    .container { max-width: 1400px; margin: 0 auto; padding: 0 4px; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
 
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
@@ -649,7 +650,7 @@
           <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro">
             <span class="theme-icon" id="themeIcon"><i class="fi fi-sr-moon"></i></span>
           </button>
-          <a href="#contacto" class="btn-primary nav-cta">Empezar ahora &rarr;</a>
+          <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/henao-jobs/30min'});return false;" class="btn-primary nav-cta">Empezar ahora &rarr;</a>
           <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
           </button>
@@ -664,7 +665,7 @@
     <a href="#transformacion">Resultados</a>
     <a href="#servicios">Servicios</a>
     <a href="#contacto">Contacto</a>
-    <a href="#contacto" class="btn-primary" style="text-align:center;justify-content:center;">Empezar ahora &rarr;</a>
+    <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/henao-jobs/30min'});return false;" class="btn-primary" style="text-align:center;justify-content:center;">Empezar ahora &rarr;</a>
   </div>
 
   <!-- ══════════════════════════════════════════════════════════════
@@ -684,7 +685,7 @@
             Presencia digital, captación y automatización. Todo lo que necesitas para llenar tu agenda.
           </p>
           <div class="hero-actions">
-            <a href="#contacto" class="btn-primary">Quiero más clientes &rarr;</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/henao-jobs/30min'});return false;" class="btn-primary">Quiero más clientes &rarr;</a>
           </div>
           <p class="hero-note">Sin permanencia · Auditoría gratuita incluida</p>
         </div>
@@ -994,7 +995,7 @@
         con una propuesta adaptada a lo que necesitas.
       </p>
       <div class="cta-actions reveal">
-        <a href="mailto:henao.jobs@gmail.com" class="btn-primary" style="font-size:1.05rem;padding:16px 36px;">
+        <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/henao-jobs/30min'});return false;" class="btn-primary" style="font-size:1.05rem;padding:16px 36px;">
           Pedir mi auditoría gratis &rarr;
         </a>
       </div>
@@ -1199,5 +1200,6 @@
     });
 
   </script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>
